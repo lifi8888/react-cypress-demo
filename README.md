@@ -34,3 +34,35 @@ A cél egy egyszerű, jól strukturált példaprojekt létrehozása, amely:
 ```bash
 npm install
 npm start
+```
+
+## 🛠 Project létrehozása
+
+Új vagy meglévő alkalmazás létrehozása esetén is nézzük át a verziókat és ellenőrizzük az aktuális környezeteket.
+
+Package.json ellenőrzése!
+
+a. React alkalmazás létrehozása üres repository-ból
+```bash
+git clone https://github.com/lifi8888/react-cypress-demo.git
+cd react-cypress-demo
+npx create-react-app temp-app --template typescript
+Copy-Item -Path ".\temp-app\*" -Destination "." -Recurse -Force
+Remove-Item -Path ".\temp-app" -Recurse -Force
+npm install
+npm start
+```
+
+b. React alkalmazás indítása clone-ozott repository-ból
+```bash
+git clone https://github.com/lifi8888/react-cypress-demo.git
+cd react-cypress-demo
+npm install
+npm start
+```
+
+## 🌐 Port módosítása
+
+Alapértelmezetten az alkalmazás a `localhost:3000` címen fut.
+
+Ha ez már foglalt, módosítható a `.env` fájlban:
