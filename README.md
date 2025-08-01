@@ -42,7 +42,7 @@ npm start
 
 Package.json ellenőrzése!
 
-a. React alkalmazás létrehozása üres repository-ból
+### a. React alkalmazás létrehozása üres repository-ból
 ```bash
 git clone https://github.com/lifi8888/react-cypress-demo.git
 cd react-cypress-demo
@@ -53,7 +53,7 @@ npm install
 npm start
 ```
 
-b. React alkalmazás indítása clone-ozott repository-ból
+### b. React alkalmazás indítása clone-ozott repository-ból
 ```bash
 git clone https://github.com/lifi8888/react-cypress-demo.git
 cd react-cypress-demo
@@ -65,4 +65,31 @@ npm start
 
 Alapértelmezetten az alkalmazás a `localhost:3000` címen fut.
 
-Ha ez már foglalt, módosítható a `.env` fájlban:
+Ha ez már foglalt, módosítható a `.env` fájlban pl.: PORT=3005
+
+## 🧪 Cypress telepítés és használat
+
+A Cypress a projekt end-to-end tesztelésére szolgál.
+
+### Telepítés
+
+```bash
+npm install cypress --save-dev
+npx cypress open
+```
+
+Válaszd az „E2E Testing” opciót, majd a „Edge” browser-t.
+
+El fog indulni a Cypress GUI.
+
+### Első spec fájl (login.cy.ts)
+
+A sablonkód helyett kezdjünk üres teszttel, ez a fájl automatikusan a cypress/e2e/ mappába kerül majd.
+
+```ts
+describe('Bejelentkezés', () => {
+  it('megnyitja a bejelentkező oldalt', () => {
+    // ide kerül majd az első teszt
+  });
+});
+```
