@@ -152,3 +152,7 @@ A `run-tests.ps1` automatikusan beolvassa a `.env` fájlt és használja a `PORT
 
 - Eredmények: `test-report/*.html`
 - Automatikus nyitás az alapértelemeztt böngészőben.
+
+## 📄 Dokumentáció
+
+- [Bejelentkezés oldal – ügyfélkövetelmények](./docs/login-requirements.md)
