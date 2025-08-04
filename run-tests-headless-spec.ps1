@@ -17,7 +17,14 @@ npx wait-on $BASE_URL
 
 Write-Host "🚀 Tesztek indítása..." -ForegroundColor Green
 
-npx cypress open
+$specs = @(
+  "cypress/e2e/notfound.cy.ts"
+  "cypress/e2e/login.cy.ts"
+)
+
+$specString = $specs -join ","
+
+npx cypress run --spec "$specString"
 
 $latest = Get-ChildItem "$PSScriptRoot\test-report\*-report.html" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
 Start-Process $latest.FullName

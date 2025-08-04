@@ -1,0 +1,12 @@
+.notfoundContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.title {
+  font-size: 32px;
+  color: darkred;
+  text-align: center;
+}

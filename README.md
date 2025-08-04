@@ -156,3 +156,7 @@ A `run-tests.ps1` automatikusan beolvassa a `.env` fájlt és használja a `PORT
 ## 📄 Dokumentáció
 
 - [Bejelentkezés oldal – ügyfélkövetelmények](./docs/login-requirements.md)
+
+## 🔄 Opcionális de ajánlott fejlesztések
+
+- ✅ 404 - Nem található oldal implementálva (`/valami-nem-letezik`)

@@ -17,7 +17,7 @@ npx wait-on $BASE_URL
 
 Write-Host "🚀 Tesztek indítása..." -ForegroundColor Green
 
-npx cypress open
+npx cypress run
 
 $latest = Get-ChildItem "$PSScriptRoot\test-report\*-report.html" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
 Start-Process $latest.FullName
