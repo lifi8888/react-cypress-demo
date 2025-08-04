@@ -26,3 +26,9 @@ yarn-error.log*
 # Cypress cache és eredmények
 cypress/screenshots/
 cypress/videos/
+
+# Mochawesome HTML riportok
+test-report/screenshots/
+test-report/videos/
+test-report/*.html
+test-report/*.json

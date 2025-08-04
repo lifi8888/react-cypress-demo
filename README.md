@@ -65,7 +65,7 @@ npm start
 
 Alapértelmezetten az alkalmazás a `localhost:3000` címen fut.
 
-Ha ez már foglalt, módosítható a `.env` fájlban pl.: PORT=3005
+Ha ez már foglalt, módosítható a `.env` fájlban pl.: PORT=3008
 
 ## 🧪 Cypress telepítés és használat
 
@@ -93,3 +93,40 @@ describe('Bejelentkezés', () => {
   });
 });
 ```
+
+## 🧾 Tesztelési jegyzőkönyvek (manuálisan)
+
+Minden egyes teszt futtatás után keletkezik egy jegyzőkönyv a `test-report/` mappában.
+
+Példa: [`test-report/login.cy.ts-result.md`](./test-report/login.cy.ts-result.md)
+
+## 🧾 Tesztelési jegyzőkönyvek (automatikusan)
+
+A Cypress tesztek automatikus riportja `mochawesome` használatával történik. A riport minden tesztfuttatás után a `test-report/` mappába kerül.
+
+### Riport jellemzői
+
+- Egyéni fájlnév: `specname-YYYY-MM-DDTHHmmss.json`
+- Tartalmazza az összes teszt eredményét
+- Hiba esetén screenshot is generálódik
+- HTML vagy más kimenet is engedélyezhető
+
+### Futtatás példája
+
+```bash
+npx cypress run --spec "cypress/e2e/login.cy.ts"
+```
+
+## 🧪 Tesztek futtatása automatikusan
+
+A `run-tests.ps1` futtatása után a legfrissebb tesztjelentés automatikusan megnyílik alapértelmezett böngészőben:
+
+### Futtatás `run-tests.ps1` fájl használatával
+
+1. Futtasd:
+```bash
+.\run-tests.ps1
+```
+
+- Eredmények: `test-report/*.html`
+- Automatikus nyitás az alapértelemeztt böngészőben.
