@@ -19,8 +19,8 @@ $envFile = ".env"
 if (-Not (Test-Path -Path $envFile)) {
     Write-Host ".env fájl létrehozása..." -ForegroundColor Cyan
     @"
-PORT=3005
-BASE_URL=http://localhost:3005
+PORT=3008
+BASE_URL=http://localhost:3008
 "@ | Out-File -Encoding utf8 -FilePath $envFile
 } else {
     Write-Host ".env fájl már létezik." -ForegroundColor Green
