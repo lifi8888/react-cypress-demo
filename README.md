@@ -57,8 +57,25 @@ npm start
 ```bash
 git clone https://github.com/lifi8888/react-cypress-demo.git
 cd react-cypress-demo
+```
+
+.env fájl létrehozása, példa tartalom:
+
+```bash
+PORT=3008
+BASE_URL=http://localhost:3008
+```
+
+Függőségek telepítése:
+
+```bash
 npm install
-npm start
+```
+
+Fejlesztői szerver + teszt + riport nyitása egyetlen paranccsal:
+
+```bash
+./run-tests.ps1
 ```
 
 ## 🔧 Környezeti beállítások
