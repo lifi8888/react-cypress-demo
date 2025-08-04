@@ -61,11 +61,14 @@ npm install
 npm start
 ```
 
-## 🌐 Port módosítása
+## 🔧 Környezeti beállítások
 
-Alapértelmezetten az alkalmazás a `localhost:3000` címen fut.
+Az `.env` fájlban adhatod meg a használt portot és a baseUrl-t:
 
-Ha ez már foglalt, módosítható a `.env` fájlban pl.: PORT=3008
+```env
+PORT=3008
+BASE_URL=http://localhost:3008
+```
 
 ## 🧪 Cypress telepítés és használat
 
@@ -119,7 +122,9 @@ npx cypress run --spec "cypress/e2e/login.cy.ts"
 
 ## 🧪 Tesztek futtatása automatikusan
 
-A `run-tests.ps1` futtatása után a legfrissebb tesztjelentés automatikusan megnyílik alapértelmezett böngészőben:
+A `run-tests.ps1` futtatása után a legfrissebb tesztjelentés automatikusan megnyílik alapértelmezett böngészőben.
+
+A `run-tests.ps1` automatikusan beolvassa a `.env` fájlt és használja a `PORT`, `BASE_URL` változókat.
 
 ### Futtatás `run-tests.ps1` fájl használatával
 

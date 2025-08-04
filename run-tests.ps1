@@ -1,10 +1,19 @@
 ﻿chcp 65001 > $null
 
-Write-Host "🌐 Várakozás a localhost:3008 elérésére..." -ForegroundColor Cyan
+# Beolvassa a .env fájlt és PowerShell változókat hoz létre
+Get-Content ".env" | ForEach-Object {
+    if ($_ -match '^\s*([^#][^=]+)=(.*)$') {
+        $name = $matches[1].Trim()
+        $value = $matches[2].Trim()
+        Set-Variable -Name $name -Value $value
+    }
+}
+
+Write-Host "🌐 Várakozás a $BASE_URL elérésére..." -ForegroundColor Cyan
 
 Start-Process powershell -ArgumentList 'npm start'
 
-npx wait-on http://localhost:3008
+npx wait-on $BASE_URL
 
 Write-Host "🚀 Tesztek indítása..." -ForegroundColor Green
 
