@@ -1,6 +1,6 @@
 # Changelog
 
-## [v0.0.1] – 2025-08-04
+## [v0.1.0] – 2025-08-04
 ### Added
 - Teljes nulláról telepíthető TDD-ready demóprojekt
 - Cypress integráció `cypress-mochawesome-reporter` használatával
