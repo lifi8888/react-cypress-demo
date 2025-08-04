@@ -33,3 +33,13 @@
 ### Changed
 - LoginPage és NotFoundPage átalakítva CSS Modules alapokra
 - Tesztek módosítva az új moduláris CSS struktúra szerint
+
+## [v0.1.4] – 2025-08-04
+
+### Added
+- `install-and-run.ps1`: automatikus környezettelepítő és futtató script bemutató célra
+- README frissítve a script részletes használati leírásával
+
+### Notes
+- A szkript bemutatja, hogyan lehet egy fejlesztői vagy tesztkörnyezetet automatizáltan létrehozni
+- A megközelítés DRP (disaster recovery plan) alapnak is használható vállalati környezetekben

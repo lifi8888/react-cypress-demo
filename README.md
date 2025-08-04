@@ -78,6 +78,16 @@ Fejlesztői szerver + teszt + riport nyitása egyetlen paranccsal:
 ./run-tests.ps1
 ```
 
+## Környezet telepítés és teljes projekt futtatása
+
+A repository-ban található egy `install-and-run.ps1` powershell fájl. Első verziója egy scriptnek, amely a tesztelőknek, szervezőknek tud környezetet telepíteni/ellenőrizni.
+
+A script bemutató jelleggel készült. Az adott vállalati környezet, szoftverek, szabályok, folyamatok meghatározzák szükségességét és pontos funkcionalitását.
+
+A munka környezetekkel kapcsolatban is kialakítható egy helyreállítási forgatókönyv (DRP), amely hatékony és gyors környezet kialakítást vagy helyreállítást tesz lehetővé.
+
+Nincs más teendő, mint az erre alkalmas gépen futtatni a scriptet. Egyéb opciók: virtuális környezetek, Windows Sandbox, VirtualBox stb.
+
 ## 🔧 Környezeti beállítások
 
 Az `.env` fájlban adhatod meg a használt portot és a baseUrl-t:
