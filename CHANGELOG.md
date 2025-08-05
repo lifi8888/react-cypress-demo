@@ -43,3 +43,25 @@
 ### Notes
 - A szkript bemutatja, hogyan lehet egy fejlesztői vagy tesztkörnyezetet automatizáltan létrehozni
 - A megközelítés DRP (disaster recovery plan) alapnak is használható vállalati környezetekben
+
+## [v0.1.5] – 2025-08-05
+
+### 🚀 Újdonságok
+
+- ✅ Bootstrap 5 integrálása a frontend felülethez
+- ✅ Bejelentkezés és 404 oldalak újratervezve Bootstrap stílusban
+- ✅ Cypress tesztek frissítése:
+  - Osztályokra (`form-control`, `btn`, `text-primary`, stb.) való ellenőrzés
+  - Vizsgálja a középre igazítást és a komponensek max. szélességét is
+- 📄 Új dokumentumok:
+  - `login-requirements.md`: frissítve Bootstrap alapján
+  - `notfound-requirements.md`: kiegészítve ügyféligény + stílus szempontból
+
+### ♻️ Refaktor
+
+- Egyszerűsített stíluskezelés Bootstrap használatával
+
+### 🧪 Tesztelés
+
+- Frissített Cypress tesztek sikeresen futnak headless és interaktív módban is
+- Tesztelési jegyzőkönyv és HTML riport generálás továbbra is működik

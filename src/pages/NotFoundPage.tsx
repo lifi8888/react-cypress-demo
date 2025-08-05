@@ -1,12 +1,12 @@
 import React from 'react';
-import styles from './NotFoundPage.module.css';
 
 const NotFoundPage: React.FC = () => {
   return (
-    <div className={styles.notfoundContainer} data-cy="notfound-container">
-      <h1 className={styles.title} data-cy="notfound-title">
-        Az oldal nem található.
-      </h1>
+    <div className="d-flex justify-content-center align-items-center vh-100 bg-light">
+      <div className="text-center">
+        <h1 className="text-danger display-4">404 - Az oldal nem található</h1>
+        <p className="lead">Ellenőrizze a címet vagy térjen vissza a főoldalra.</p>
+      </div>
     </div>
   );
 };

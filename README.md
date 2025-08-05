@@ -14,8 +14,12 @@ A cél egy egyszerű, jól strukturált példaprojekt létrehozása, amely:
 
 - React (TypeScript)
 - Cypress
+- Bootstrap (UI komponensek és stílus)
 - GitHub Actions
 
+## 🎨 Stílus
+
+A projekt jelenleg a [Bootstrap 5](https://getbootstrap.com/) keretrendszert használja az oldalak megjelenítésére. Ez biztosítja a konzisztens és reszponzív kinézetet, gyors fejlesztés mellett.
 ## 🚀 Funkciók
 
 - 🔐 Bejelentkezés (form validációval)
@@ -153,6 +157,14 @@ A `run-tests.ps1` futtatása után a legfrissebb tesztjelentés automatikusan me
 
 A `run-tests.ps1` automatikusan beolvassa a `.env` fájlt és használja a `PORT`, `BASE_URL` változókat.
 
+A `run-tests-headless.ps1` script lehetővé teszi a Cypress tesztek fej nélküli (GUI nélküli) futtatását, ami ideális CI/CD pipeline-okhoz vagy automatikus teszteléshez. A script lefuttatja az összes tesztet, majd a generált riportokat a `test-report/` mappába helyezi. Ebben az üzemmódban a tesztek gyorsabban futnak le, és nincs szükség felhasználói beavatkozásra.
+
+A `run-tests-headless-spec.ps1` script lehetőséget ad arra, hogy csak bizonyos tesztfájlokat futtassunk le. A kívánt spec fájlok felsorolhatóak a scriptben.
+
+- Csak a megadott tesztek futnak le.
+- Az eredmények a `test-report/` mappába kerülnek.
+- Ideális, ha csak egy-egy tesztet vagy tesztcsoportot szeretnél gyorsan ellenőrizni.
+
 ### Futtatás `run-tests.ps1` fájl használatával
 
 1. Futtasd:
@@ -166,6 +178,7 @@ A `run-tests.ps1` automatikusan beolvassa a `.env` fájlt és használja a `PORT
 ## 📄 Dokumentáció
 
 - [Bejelentkezés oldal – ügyfélkövetelmények](./docs/login-requirements.md)
+- [404 oldal – ügyfélkövetelmények](./docs/notfound-requirements.md)
 
 ## 🔄 Opcionális de ajánlott fejlesztések
 
