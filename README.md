@@ -185,10 +185,12 @@ A `run-tests-headless-spec.ps1` script lehetőséget ad arra, hogy csak bizonyos
 
 A `cypress/e2e` mappában találhatóak:
 
-- `login.cy.ts` – Bejelentkezési oldal UI és működés ellenőrzése
-- `dashboard.cy.ts` – Egyenlegoldal és kijelentkezés tesztelése
-- `notfound.cy.ts` - 404-es oldal tesztelése
-
+- `login.cy.ts`: A login oldal elérhetősége, struktúrája és stílusa.
+- `valid.cy.ts`: Helyes bejelentkezési folyamat.
+- `invalid.cy.ts`: Hibás email / hibás jelszó kezelése.
+- `dashboard.cy.ts`: Az egyenleg oldal struktúrája és stílusa.
+- `logout.cy.ts`: Kijelentkezés és visszairányítás ellenőrzése.
+- `notfound.cy.ts`: 404-es oldal ellenőrzése
 ## 🔄 Opcionális de ajánlott fejlesztések
 
 - ✅ 404 - Nem található oldal implementálva (`/valami-nem-letezik`)

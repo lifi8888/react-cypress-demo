@@ -80,3 +80,14 @@
 
 ### UI
 - Bootstrap komponensek használata a Dashboard oldalon
+
+## [v0.1.7] – 2025-08-05
+
+### Added
+- Bejelentkezés utáni védelem a dashboard oldalra (`PrivateRoute`)
+- Alkalmazásszintű `AuthContext` mock felhasználókkal
+- Tesztek bővítése:
+  - `invalid.cy.ts`: Hibás bejelentkezési adatok kezelése
+  - `valid.cy.ts`: Helyes bejelentkezési folyamat tesztelése
+  - `logout.cy.ts`: Kijelentkezés és redirect teszt
+- Kisebb módosítások az oldalstruktúrában (Bootstrap ID-k)

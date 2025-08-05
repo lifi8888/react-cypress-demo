@@ -1,11 +1,13 @@
 import React from 'react';
+import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
 
 const DashboardPage: React.FC = () => {
+  const { logout } = useAuth();
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    // Itt jöhet később a session törlés / auth reset
+    logout();
     navigate('/login');
   };
 

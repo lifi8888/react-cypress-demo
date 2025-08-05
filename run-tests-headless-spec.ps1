@@ -18,8 +18,7 @@ npx wait-on $BASE_URL
 Write-Host "🚀 Tesztek indítása..." -ForegroundColor Green
 
 $specs = @(
-  "cypress/e2e/notfound.cy.ts"
-  "cypress/e2e/login.cy.ts"
+  "cypress/e2e/login-invalid.cy.ts"
 )
 
 $specString = $specs -join ","

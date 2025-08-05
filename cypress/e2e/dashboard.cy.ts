@@ -2,7 +2,15 @@ import { expect } from 'chai';
 
 describe('Dashboard - Egyenleg lekérdezés', () => {
   beforeEach(() => {
-    cy.visit('/dashboard');
+    // Bejelentkezés mock felhasználóval
+    cy.visit('/login');
+
+    cy.get('#login-email').type('teszt@pelda.hu');
+    cy.get('#login-password').type('Titkos123');
+    cy.get('#login-submit').click();
+
+    // Várjuk meg, hogy a dashboard betöltődjön
+    cy.url().should('include', '/dashboard');
   });
 
   it('megnyitja a dashboard oldalt és megjelennek az elemek', () => {
