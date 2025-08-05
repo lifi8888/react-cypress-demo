@@ -20,6 +20,7 @@ describe('Dashboard - Egyenleg lekérdezés', () => {
     cy.get('#dashboard-title').should('contain', 'Egyenleg');
     cy.get('#balance-value').should('exist');
     cy.get('#balance-switch-button').should('exist');
+    cy.get('#balance-updated-info').should('exist');
     cy.get('#logout-button').should('exist');
   });
 
@@ -79,6 +80,15 @@ describe('Dashboard - Egyenleg lekérdezés', () => {
       .and('have.attr', 'type', 'button')
       .and('have.attr', 'title', 'Egyenleg váltása')
       .click();
+  });
+
+  it('az egyenleg frissítési információ stílusa', () => {
+    cy.get('#balance-updated-info')
+      .should('exist')
+      .and('have.class', 'text-center')
+      .and('have.class', 'text-muted')
+      .and('have.class', 'mb-3')
+      .and('have.css', 'font-size', '14px');
   });
 
   it('a kijelentkezés gomb stílusa és funkciója', () => {

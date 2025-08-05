@@ -43,6 +43,9 @@ const DashboardPage: React.FC = () => {
             🔄
           </button>
         </div>
+        <div id="balance-updated-info" className="text-center text-muted mb-3" style={{ fontSize: '14px' }}>
+          Frissítve: {new Date().toLocaleString('hu-HU', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })}
+        </div>
         <button id="logout-button" className="btn btn-outline-secondary w-100" type="button" onClick={handleLogout}>Kijelentkezés</button>
       </div>
     </div>

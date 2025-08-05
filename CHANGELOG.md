@@ -95,6 +95,12 @@
 ## [v0.1.8] – 2025-08-05
 
 ### Added
-- Középen megjelenített dobozba bekerült:
+- Dashboardon megjelenített dobozba bekerült:
   - `Üdvözlünk, [Felhasználónév]!`
   - 🔄 `Egyenleg frissítése` gomb
+
+## [v0.1.9] – 2025-08-05
+
+### Added
+- Dashboardon megjelenített dobozba bekerült:
+  - Esetleges információ: pl. „Frissítve: 2025.08.05 10:45”
