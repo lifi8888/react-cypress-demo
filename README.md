@@ -178,7 +178,16 @@ A `run-tests-headless-spec.ps1` script lehetőséget ad arra, hogy csak bizonyos
 ## 📄 Dokumentáció
 
 - [Bejelentkezés oldal – ügyfélkövetelmények](./docs/login-requirements.md)
+- [Dashboard oldal – ügyfélkövetelmények](./docs/dashboard-requirements.md)
 - [404 oldal – ügyfélkövetelmények](./docs/notfound-requirements.md)
+
+## Cypress tesztek
+
+A `cypress/e2e` mappában találhatóak:
+
+- `login.cy.ts` – Bejelentkezési oldal UI és működés ellenőrzése
+- `dashboard.cy.ts` – Egyenlegoldal és kijelentkezés tesztelése
+- `notfound.cy.ts` - 404-es oldal tesztelése
 
 ## 🔄 Opcionális de ajánlott fejlesztések
 

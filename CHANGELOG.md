@@ -65,3 +65,18 @@
 
 - Frissített Cypress tesztek sikeresen futnak headless és interaktív módban is
 - Tesztelési jegyzőkönyv és HTML riport generálás továbbra is működik
+
+## [v0.1.6] – 2025-08-05
+
+### Újdonságok
+- 📄 Új oldal: **DashboardPage**
+  - Megjeleníti a felhasználó egyenlegét
+  - Kijelentkezés gombbal visszanavigál a login oldalra
+- 🧪 Új E2E teszt: `dashboard.cy.ts`
+  - Ellenőrzi az oldal struktúráját, stílusát és működését
+
+### Változások
+- Frissítettük az `App.tsx`-t a `/dashboard` útvonallal
+
+### UI
+- Bootstrap komponensek használata a Dashboard oldalon
