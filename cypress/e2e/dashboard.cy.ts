@@ -16,8 +16,10 @@ describe('Dashboard - Egyenleg lekérdezés', () => {
   it('megnyitja a dashboard oldalt és megjelennek az elemek', () => {
     cy.get('#dashboard-page').should('exist');
     cy.get('#dashboard-card').should('exist');
+    cy.get('#welcome-message').should('contain', 'Üdvözlünk, Teszt Elek!');
     cy.get('#dashboard-title').should('contain', 'Egyenleg');
     cy.get('#balance-value').should('exist');
+    cy.get('#balance-switch-button').should('exist');
     cy.get('#logout-button').should('exist');
   });
 
@@ -44,19 +46,39 @@ describe('Dashboard - Egyenleg lekérdezés', () => {
       });
   });
 
-  it('az egyenleg cím és érték stílusa', () => {
+  it('a welcome-message stílusa', () => {
+    cy.get('#welcome-message')
+      .should('exist')
+      .and('have.class', 'text-center')
+      .and('have.class', 'mb-3');
+  });
+
+  it('az egyenleg cím stílusa', () => {
     cy.get('#dashboard-title')
       .should('exist')
       .and('have.class', 'text-center')
       .and('have.class', 'text-success')
       .and('have.class', 'mb-4')
       .and('have.css', 'font-size', '32px');
+  });
 
+  it('az egyenleg érték stílusa', () => {
     cy.get('#balance-value')
       .should('exist')
       .and('have.class', 'fs-4')
       .and('have.class', 'fw-bold')
       .and('contain', 'Ft');
+  });
+
+  it('az egyenleg váltó gomb stílusa és funkciója', () => {
+    cy.get('#balance-switch-button')
+      .should('exist')
+      .and('have.class', 'btn')
+      .and('have.class', 'btn-sm')
+      .and('have.class', 'btn-link')
+      .and('have.attr', 'type', 'button')
+      .and('have.attr', 'title', 'Egyenleg váltása')
+      .click();
   });
 
   it('a kijelentkezés gomb stílusa és funkciója', () => {

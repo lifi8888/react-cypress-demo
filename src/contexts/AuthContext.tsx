@@ -1,10 +1,9 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { mockUsers } from '../data/mockUsers';
 
 interface AuthContextType {
   isAuthenticated: boolean;
-  user: { email: string; name: string; balance: number } | null;
+  user: { email: string; name: string; balance: { [key: number]: number } } | null;
   login: (email: string, password: string) => boolean;
   logout: () => void;
 }

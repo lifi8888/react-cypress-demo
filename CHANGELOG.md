@@ -91,3 +91,10 @@
   - `valid.cy.ts`: Helyes bejelentkezési folyamat tesztelése
   - `logout.cy.ts`: Kijelentkezés és redirect teszt
 - Kisebb módosítások az oldalstruktúrában (Bootstrap ID-k)
+
+## [v0.1.8] – 2025-08-05
+
+### Added
+- Középen megjelenített dobozba bekerült:
+  - `Üdvözlünk, [Felhasználónév]!`
+  - 🔄 `Egyenleg frissítése` gomb
