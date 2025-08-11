@@ -114,3 +114,9 @@
 ### Notes
 - Alapértelmezett PORT: 3008 (Actions env)
 - baseUrl CI-ben: CYPRESS_baseUrl környezeti változóval állítva
+
+## [v0.1.11] – 2025-08-11
+### Added
+- Continuous Deployment GitHub Pages-re (CD)
+- SPA fallback (build/404.html), hogy a kliens oldali route-ok frissítéskor is működjenek
+- `/` route automatikusan átirányít a `/login` oldalra

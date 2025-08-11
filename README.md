@@ -1,5 +1,8 @@
 ![CI](https://github.com/lifi8888/react-cypress-demo/actions/workflows/ci.yml/badge.svg)
 
+[![CD](https://github.com/<felhasznalo>/<repo>/actions/workflows/cd.yml/badge.svg)](../../actions/workflows/cd.yml)
+
+
 # React + Cypress Demo
 
 Ez a projekt egy bemutató célú React alkalmazás, amely Cypress end-to-end tesztekkel van ellátva.

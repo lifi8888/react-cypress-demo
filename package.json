@@ -1,8 +1,9 @@
 {
   "name": "react-cypress-demo",
-  "version": "25.08.05a",
+  "version": "25.08.11a",
   "description": "A React application with Cypress testing setup",
   "private": true,
+  "homepage": ".",
   "license": "UNLICENSED",
   "author": {
     "name": "lifi8888",
