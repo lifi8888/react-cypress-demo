@@ -8,6 +8,7 @@ export default defineConfig({
     baseUrl: process.env.BASE_URL || 'http://localhost:3000',
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
+      return config;
     },
     specPattern: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}',
     supportFile: 'cypress/support/e2e.ts',
@@ -20,6 +21,9 @@ export default defineConfig({
     json: false,
     reportFilename: '[name]-report',
     charts: true,
+    reportPageTitle: 'E2E Report',
+    embeddedScreenshots: true,
     inlineAssets: true,
+    saveAllAttempts: false,
   }
 });

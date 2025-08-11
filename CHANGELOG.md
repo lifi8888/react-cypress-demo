@@ -104,3 +104,13 @@
 ### Added
 - Dashboardon megjelenített dobozba bekerült:
   - Esetleges információ: pl. „Frissítve: 2025.08.05 10:45”
+
+## [v0.1.10] – 2025-08-11
+
+### Added
+- GitHub Actions CI: build + fejlesztői szerver indítás + Cypress E2E headless
+- Artifaktok: videók, screenshotok, HTML riportok feltöltése
+
+### Notes
+- Alapértelmezett PORT: 3008 (Actions env)
+- baseUrl CI-ben: CYPRESS_baseUrl környezeti változóval állítva
