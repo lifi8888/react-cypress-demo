@@ -1,6 +1,6 @@
-![CI](https://github.com/lifi8888/react-cypress-demo/actions/workflows/ci.yml/badge.svg)
+[![CI](https://github.com/lifi8888/react-cypress-demo/actions/workflows/ci.yml/badge.svg)](../../actions/workflows/ci.yml)
 
-[![CD](https://github.com/<felhasznalo>/<repo>/actions/workflows/cd.yml/badge.svg)](../../actions/workflows/cd.yml)
+[![CD](https://github.com/lifi8888/react-cypress-demo/actions/workflows/cd.yml/badge.svg)](../../actions/workflows/cd.yml)
 
 
 # React + Cypress Demo
