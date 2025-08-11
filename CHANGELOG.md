@@ -120,3 +120,4 @@
 - Continuous Deployment GitHub Pages-re (CD)
 - SPA fallback (build/404.html), hogy a kliens oldali route-ok frissítéskor is működjenek
 - `/` route automatikusan átirányít a `/login` oldalra
+- Fix SPA routing for GitHub Pages
